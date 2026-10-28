@@ -1,0 +1,9 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: modmysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: moddb
+    ports:
+      - "3306:3306"
